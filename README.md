@@ -8,9 +8,15 @@ run the follwing from the project directory to start the server
 ```ruby
 rails s
 ```
+
 Type the following into your browser:
 ```
 localhost:3000
+```
+
+## Testing
+```ruby
+bin/rake
 ```
 
 ## Here is the original specification:
