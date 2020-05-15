@@ -1,5 +1,32 @@
 <h1>Configuration File Content</h1>
 
 <% @all.each_pair do |key, value| %>
-  <p>Key: <%= key %> Value: <%= value %></p>
+  <p>
+  <span class="keystyle">Key:</span>
+   <%= key %>
+   <span class="valstyle">Value:</span>
+   <%= value %>
+  </p>
 <% end %>
+
+<h2>Select Key to see Value</h2>
+<select id="singleSelectTextDDJS" class="select-css"
+        onchange="singleSelectChangeText()">
+      <% @all.each_pair do |key, value| %>
+        <option value='<%= value %>'><%= key %></option>
+      <% end %>
+</select>
+<input type="text" id="textFieldTextJS" class="text-css" 
+placeholder="">   
+
+<script>    
+function singleSelectChangeText() {
+        //Getting Value      
+        var selObj = document.getElementById("singleSelectTextDDJS");
+        var selValue = selObj.options[selObj.selectedIndex].value;
+  
+        //Setting Value
+        var txtObj = document.getElementById("textFieldTextJS");
+        txtObj.value = selValue;
+    }
+</script>    

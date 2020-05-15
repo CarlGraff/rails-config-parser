@@ -1,3 +1,26 @@
 // Place all the styles related to the Config controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+body {
+    background-color: lightblue;
+  }
+.keystyle, .valstyle {
+    color: rgb(38, 0, 255);
+    font-family:arial;
+  }
+
+  .select-css {
+	font-size: 16px;
+	font-family: sans-serif;
+	font-weight: 700;
+	color: #444;
+	line-height: 1.3;
+	padding: .6em 1.4em .5em .8em;
+}  
+
+  .text-css {
+	font-size: 16px;
+	font-family: sans-serif;
+	font-weight: 700;
+	color: #444;
+}  
